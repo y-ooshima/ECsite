@@ -13,7 +13,10 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-        $major_categories = MajorCategory::pluck('name', 'id');
+        //$major_categories = MajorCategory::pluck('name', 'id');
+        $major_category_names = [
+            '本', 'コンピュータ', 'ディスプレイ'
+        ];
             
         $book_categories = [
             'ビジネス', '文学・評論', '人文・思想', 'スポーツ',
